@@ -99,8 +99,8 @@ class App extends React.Component {
         return;
       case 2:
         this.currentItem = [
-          [0, 0, 0, 0],
-          [3, 3, 3, 3],
+          [3, 0, 0, 0],
+          [3, 3, 3, 0],
           [0, 0, 0, 0],
           [0, 0, 0, 0]
         ];
@@ -182,7 +182,7 @@ class App extends React.Component {
     else if (event.keyCode === 37) { // left key
       this.goLeftIfPossible();
     }
-    else if (event.keyCode === 32) { // right key
+    else if (event.keyCode === 32) { // space key
       this.rotateCurrentItem();
     }
   }
